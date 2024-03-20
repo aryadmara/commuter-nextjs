@@ -4,9 +4,7 @@ import Card from "@/components/Card";
 import { FaTrainSubway } from "react-icons/fa6";
 import Testimoni from "@/components/Testimoni";
 import Footer from "@/components/Footer";
-import Video from "@/components/Video";
 import Hero from "@/components/Hero";
-import Marquee from "@/components/Marque";
 export default function Home() {
   return (
     <main className="text-[#292570]">
@@ -87,21 +85,15 @@ export default function Home() {
             className=" mx-auto mb-20 grid grid-cols-1 md:grid-cols-3 gap-4 "
           >
             <Card
-              gambar={
-                <img src="https://commuterline.id/app/sam/assets/home/afe01f4b0ddf5b41902c8a1cf08f38e3.svg" />
-              }
+              gambar="https://commuterline.id/app/sam/assets/home/afe01f4b0ddf5b41902c8a1cf08f38e3.svg"
               untung="Lacak kereta kapan aja"
             />
             <Card
-              gambar={
-                <img src="https://commuterline.id/app/sam/assets/home/43fdab8150da38d7cef5dd3f3cf2ddec.svg" />
-              }
+              gambar="https://commuterline.id/app/sam/assets/home/43fdab8150da38d7cef5dd3f3cf2ddec.svg"
               untung="Mudah tentukan jadwal"
             />
             <Card
-              gambar={
-                <img src="https://commuterline.id/app/sam/assets/home/a53a032aab2c51da9d7b6e6c984ada72.svg" />
-              }
+              gambar="https://commuterline.id/app/sam/assets/home/a53a032aab2c51da9d7b6e6c984ada72.svg"
               untung="Fitur perjalanan lengkap"
             />
           </div>
