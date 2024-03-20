@@ -1,17 +1,16 @@
-import Image from "next/image";
-import Navbar from "@/components/Navbar";
+"use client";
 import Card from "@/components/Card";
+import { useRouter } from "next/navigation";
 import { FaTrainSubway } from "react-icons/fa6";
 import Testimoni from "@/components/Testimoni";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 export default function Home() {
+  const router = useRouter();
   return (
     <main className="text-[#292570]">
       <section>
-        {/* <Navbar /> */}
         <Hero />
-        {/* <Video /> */}
         {/* OVERVIEW PERUSAHAAN AWAL */}
         <div className="w-full">
           <div className="  mx-6 md:mx-40 my-20 ">
@@ -55,13 +54,17 @@ export default function Home() {
               <br /> perjalanan lebih mudah dan nyaman!
             </h1>
             <img
-              className="h-[50vh] w-screen md:w-auto md:h-auto"
+              className="h-[50vh] object-cover md:w-auto md:h-auto"
               src="https://commuterline.id/app/sam/assets/home/9bd9b1f5f5a96532c8d7b88267259d25.png"
               alt=""
             />
-            <div className="flex justify-end mb-4">
+            <div className="flex justify-end mb-4 ">
               <img
-                className=" justify-center items-center text-center"
+                onClick={() =>
+                  (window.location.href =
+                    "https://play.google.com/store/apps/details?id=com.kci.access&hl=en_US")
+                }
+                className=" w-32 md:w-auto object-contain justify-center items-center text-center cursor-pointer"
                 src="https://commuterline.id/app/sam/assets/images/ac70ce07ac0616502090352789b6f44b.png"
                 alt=""
               />
@@ -100,17 +103,17 @@ export default function Home() {
         </div>
         {/* LAYANAN GAMBARAN BESAR AKHIR */}
         <div>
-          <div className="py-5 flex flex-col text-center items-center justify-center  my-10 mx-4 md:mx-40">
+          <div className="  py-5 flex flex-col text-center items-center justify-center  mt-10 mx-4 md:mx-40">
             <h1 className="text-3xl font-semibold">
               Lebih mudah pakai C-Acces
             </h1>
-            <h1 className=" text-lg text-[#ed6b1e] font-medium">
+            <h1 className=" mt-6  text-lg text-[#ed6b1e] font-medium">
               Unduh sekarang di Play Store
             </h1>
           </div>
           <div className="  py-5">
             <div className="mx-2 md:mx-20 ">
-              <div className="   mx-4 md:mx-auto mb-10 flex md:grid flex-row md:grid-cols-3 gap-4 gap-y-10 overflow-x-auto">
+              <div className="    mx-4 md:mx-auto mb-10 flex md:grid flex-row md:grid-cols-3 gap-4 gap-y-10 overflow-x-auto">
                 {/* TERSTIMONIAL AWAL */}
                 <Testimoni
                   gambar="https://i.pinimg.com/564x/df/31/8a/df318a910cd9179c46a147c916ebe1b8.jpg"

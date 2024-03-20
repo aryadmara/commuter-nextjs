@@ -70,8 +70,13 @@ const Iklan: React.FunctionComponent<IIklanProps> = (props) => {
           </div>
         </div>
       </div>
-      <div className="flex w-full h-[380px] bg-[#ed6b1e]">
-        <div className="mx-6 md:mx-32 px-6 md:px-10 py-5 text-center  md:text-left text-[#292570]  my-auto space-y-4 bg-white rounded-3xl md:max-w-[410px] md:max-h-[256px]">
+      <div className="flex w-full h-[380px] bg-[#2b3577] relative">
+        <img
+          className=" w-full object-cover opacity-15"
+          src="https://asset-2.tstatic.net/tribunnews/foto/bank/images/syuting-film-bebas.jpg"
+          alt=""
+        />
+        <div className=" absolute top-12 mx-6 md:mx-32 px-6 md:px-10 py-5 text-center  md:text-left text-[#292570]  my-auto space-y-4 bg-white rounded-3xl md:max-w-[410px] md:max-h-[256px]">
           <h1 className=" font-bold text-2xl">Contact Us</h1>
           <h2 className="flex ">
             <IoMdMail className="w-6 h-6 mr-4" /> marketing-kci@krl.co.id
