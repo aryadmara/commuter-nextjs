@@ -13,13 +13,18 @@ const Iklan: React.FunctionComponent<IIklanProps> = (props) => {
   const router = useRouter();
   return (
     <div>
-      <div className=" bg-[url('https://redigest.web.id/wp-content/uploads/2024/01/BB.jpeg')] flex flex-col   w-full h-[400px] md:h-[600px] bg-no-repeat bg-center  bg-cover  mb-10">
-        <div className="  px-6 md:px-40 py-20 text-center  md:text-left text-white  my-10">
-          <h1 className=" text-2xl md:text-4xl  align-middle font-semibold   ">
+      <div className="flex flex-col relative bg-gradient-to-r from-[#ed6b1e]">
+        <img
+          className="w-full object-none md:object-cover h-[250px] md:h-[500px] bg-no-repeat  bg-center  md:bg-cover border-b opacity-20"
+          src="https://redigest.web.id/wp-content/uploads/2024/01/BB.jpeg"
+          alt=""
+        />
+        <div className=" absolute px-6 md:px-40 py-20 text-center  md:text-left text-white">
+          <h1 className=" text-2xl md:text-4xl  align-middle   ">
             Kereta Commuter Indonesia
           </h1>
           <h1 className=" mt-4 text-5xl md:text-7xl  align-middle  font-bold">
-            Space Iklan
+            Space
           </h1>
         </div>
       </div>
@@ -70,7 +75,7 @@ const Iklan: React.FunctionComponent<IIklanProps> = (props) => {
           </div>
         </div>
       </div>
-      <div className="flex w-full h-[380px] bg-[#2b3577] relative">
+      <div className="flex w-full h-[380px] bg-gradient-to-l from-[#2b3577] relative">
         <img
           className=" w-full object-cover opacity-15"
           src="https://asset-2.tstatic.net/tribunnews/foto/bank/images/syuting-film-bebas.jpg"

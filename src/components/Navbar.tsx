@@ -11,14 +11,13 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
     });
   };
   return (
     <section className="">
       <div className=" ">
         <header className=" px-6 md:px-40 py-4  w-full  m-auto left-0 right-0  flex items-center justify-between  text-[#929499] bg-white ">
-          <div className=" bottom-4 right-4 fixed bg-[#ed6b1e] rounded-md p-4 z-50 cursor-pointer">
+          <div className=" bottom-40  md:bottom-4 right-4 fixed bg-[#ed6b1e] rounded-md p-4 z-50 cursor-pointer">
             <span className="  rounded-full">
               <a href="#">
                 <IoIosArrowDropupCircle
@@ -36,7 +35,7 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
               onClick={() => router.push("/")}
             />
           </h2>
-          <nav className=" hidden md:block bg-opacity-100 text-xs text-[#292570] ">
+          <nav className=" hidden md:block bg-opacity-100 text-xs text-[#292570] font-semibold ">
             <a
               className=" m-5 hover:text-[#c9c9c9] "
               href="#"

@@ -55,11 +55,23 @@ const Footer: React.FunctionComponent<IFooterProps> = (props) => {
             commuter.care@krl.co.id
           </h2>
         </div>
-        <div className=" flex-1 space-y-3  px-12 font-semibold text-[#292570]">
-          <h1 onClick={() => router.push("/")}>Home</h1>
-          <h1 onClick={() => router.push("/profil")}>About Us</h1>
-          <h1 onClick={() => router.push("/layanan")}>Services</h1>
-          <h1>Teams</h1>
+        <div className="hidden md:block flex-1 space-y-3  px-12 font-semibold text-[#292570]">
+          <h1 className=" cursor-pointer" onClick={() => router.push("/")}>
+            Home
+          </h1>
+          <h1
+            className=" cursor-pointer"
+            onClick={() => router.push("/profil")}
+          >
+            About Us
+          </h1>
+          <h1
+            className=" cursor-pointer"
+            onClick={() => router.push("/layanan")}
+          >
+            Services
+          </h1>
+          <h1 className=" cursor-pointer">Teams</h1>
         </div>
       </div>
       <h1 className=" mx-4 md:mx-40 text-center md:text-left  ">

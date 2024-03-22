@@ -16,9 +16,14 @@ const About: React.FunctionComponent<IAboutProps> = (props) => {
   };
   return (
     <div className=" bg-[#f0f2f4]  ">
-      <div className=" bg-[url('https://commuterline.id/app/sam/assets/customer_info/a7d9a523c22d9de8e2704e24ce83e3f2.png')] flex flex-col   w-full h-[400px] md:h-[600px] bg-no-repeat bg-center  bg-cover  mb-10">
-        <div className="  px-6 md:px-40 py-20 text-center  md:text-left text-white  my-10">
-          <h1 className=" text-2xl md:text-4xl  align-middle font-semibold   ">
+      <div className="flex flex-col relative bg-gradient-to-r from-[#ed6b1e]">
+        <img
+          className="w-full object-none md:object-cover h-[250px] md:h-[500px] bg-no-repeat  bg-center  md:bg-cover border-b opacity-20"
+          src="https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_1024/v1641464523/no4imzbaoz9xlebbduqj.jpg"
+          alt=""
+        />
+        <div className=" absolute px-6 md:px-40 py-20 text-center  md:text-left text-white">
+          <h1 className=" text-2xl md:text-4xl  align-middle   ">
             Kereta Commuter Indonesia
           </h1>
           <h1 className=" mt-4 text-5xl md:text-7xl  align-middle  font-bold">
@@ -211,7 +216,11 @@ const About: React.FunctionComponent<IAboutProps> = (props) => {
             />
             <div className="flex justify-center mb-4">
               <img
-                className=" justify-center items-center text-center mt-4"
+                onClick={() =>
+                  (window.location.href =
+                    "https://play.google.com/store/apps/details?id=com.kci.access&hl=en_US")
+                }
+                className=" justify-center items-center text-center mt-4 cursor-pointer"
                 src="https://commuterline.id/app/sam/assets/images/ac70ce07ac0616502090352789b6f44b.png"
                 alt=""
               />

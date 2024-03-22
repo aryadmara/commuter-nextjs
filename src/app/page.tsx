@@ -113,7 +113,7 @@ export default function Home() {
           </div>
           <div className="  py-5">
             <div className="mx-2 md:mx-20 ">
-              <div className="    mx-4 md:mx-auto mb-10 flex md:grid flex-row md:grid-cols-3 gap-4 gap-y-10 overflow-x-auto">
+              <div className=" scrollbar-hide   mx-4 md:mx-auto mb-10 flex  flex-row  gap-4 gap-y-10 overflow-x-auto">
                 {/* TERSTIMONIAL AWAL */}
                 <Testimoni
                   gambar="https://i.pinimg.com/564x/df/31/8a/df318a910cd9179c46a147c916ebe1b8.jpg"

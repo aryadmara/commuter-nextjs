@@ -1,40 +1,34 @@
 "use client";
 import * as React from "react";
 import { useRouter } from "next/navigation";
+import { IoMdHome } from "react-icons/io";
+import { FaPeopleRoof } from "react-icons/fa6";
+import { FaTrain } from "react-icons/fa";
 
 interface INavbarMobileProps {}
 
 const NavbarMobile: React.FunctionComponent<INavbarMobileProps> = (props) => {
   const router = useRouter();
   return (
-    <div className=" md:hidden w-full h-8 items-center justify-center border-b">
-      <nav className=" flex justify-center items-center space-x-5 overflow-x-auto text-[#929499]  cursor-pointer">
-        <a
-          onClick={() => router.push("/")}
-          className="  hover:text-[#c9c9c9] "
-          href="#"
-        >
-          HOME
-        </a>
-        <a
-          onClick={() => router.push("/profil")}
-          className="  hover:text-[#c9c9c9]"
-          href="#"
-        >
-          ABOUT US
-        </a>
-        <a
-          onClick={() => router.push("/layanan")}
-          className="  hover:text-[#c9c9c9]"
-          href="#"
-        >
-          SERVICE
-        </a>
-        <a className="  hover:text-[#c9c9c9]" href="#">
-          TEAM
-        </a>
-      </nav>
-    </div>
+    <header className="px-0  md:px-40   w-full  bottom-0 right-0 fixed md:hidden    text-[#929499] bg-green border-t-2">
+      <div className="w-full h-auto bottom-0 right-0 flex justify-around bg-white p-4 z-[999] cursor-pointer">
+        <span className="  ">
+          <a href="#" className="" onClick={() => router.push("/")}>
+            <IoMdHome className=" w-8 h-8 text-[#ed6b1e] hover:bg-gray-200 rounded-3xl" />
+          </a>
+        </span>
+        <span className="  " onClick={() => router.push("/profil")}>
+          <a href="#">
+            <FaPeopleRoof className="w-8 h-8 text-[#ed6b1e] hover:bg-gray-200 rounded-3xl" />
+          </a>
+        </span>
+        <span className="  ">
+          <a href="#" onClick={() => router.push("/layanan")}>
+            <FaTrain className="w-8 h-8 text-[#ed6b1e] hover:bg-gray-200 rounded-3xl" />
+          </a>
+        </span>
+      </div>
+    </header>
   );
 };
 
