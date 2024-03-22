@@ -32,6 +32,17 @@ const Profil: React.FunctionComponent<IProfilProps> = (props) => {
           Sejarah
         </h2>
       </div>
+      <div className=" mx-6 md:mx-40 my-20">
+        <h1 className=" text-5xl font-semibold text-[#292570] border-b">
+          Visi dan Misi{" "}
+        </h1>
+        <p className=" text-md md:text-xl mt-4">
+          Kereta Commuter Indonesia memiliki tata nilai sebagai komitmen
+          perusahaan untuk mewujudkan visi dan misinya berdasarkan standar
+          global dan penerapan tata kelola perusahaan yang baik (Good Corporate
+          Governance )
+        </p>
+      </div>
       <div className=" w-full my-10 md:my-20">
         <div className=" h-[1000px] mx-4 md:mx-40 bg-[#292570] text-white flex flex-col pt-8 md:pt-20 pl-6 md:pl-96 pr-6 md:pr-20  relative overflow-hidden rounded-xl">
           <div className=" z-40">
@@ -65,6 +76,11 @@ const Profil: React.FunctionComponent<IProfilProps> = (props) => {
             alt=""
           />
         </div>
+        <div className=" mx-6 md:mx-40 mt-32 text-right">
+          <h1 className=" text-5xl font-semibold text-[#292570] border-b">
+            Nilai & Budaya Perusahaan
+          </h1>
+        </div>
         <div className=" my-8 flex w-full h-[350px] bg-gradient-to-r from-[#0f939e] to-[#292570] overflow-hidden relative ">
           <img
             className="w-full object-cover opacity-20 "
@@ -79,6 +95,7 @@ const Profil: React.FunctionComponent<IProfilProps> = (props) => {
             </h2>
           </div>
         </div>
+
         <div className=" w-full mx-4 md:mx-auto grid grid-cols-6 md:grid-cols-1 md:gap-5  py-5 overflow-x-auto">
           <div className="flex flex-row md:flex-col mx-auto gap-10 md:gap-6 text-[#292570] ">
             <CardBudaya
@@ -132,6 +149,21 @@ const Profil: React.FunctionComponent<IProfilProps> = (props) => {
             />
           </div>
         </div>
+        <div className=" mx-6 md:mx-40 mt-32 ">
+          <h1 className=" text-5xl font-semibold text-[#292570] border-b">
+            Sejarah
+          </h1>
+        </div>
+        <img
+          className=" my-5 hidden md:block w-full object-cover"
+          src="/kereta.png"
+          alt=""
+        />
+        <img
+          className=" my-5 md:hidden w-full object-cover"
+          src="/mobile.png"
+          alt=""
+        />
       </div>
     </section>
   );
