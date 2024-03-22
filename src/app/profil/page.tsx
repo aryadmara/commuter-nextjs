@@ -29,7 +29,7 @@ const Profil: React.FunctionComponent<IProfilProps> = (props) => {
           className=" bg-[#e7e9eb] py-4 px-4 md:px-10 text-[#2b3577] hover:text-white hover:bg-[#2b3577] font-bold rounded-xl  cursor-pointer"
           //   onClick={() => router.push("/iklan")}
         >
-          Sejarah
+          Teams
         </h2>
       </div>
       <div className=" mx-6 md:mx-40 my-20">
@@ -159,11 +159,13 @@ const Profil: React.FunctionComponent<IProfilProps> = (props) => {
           src="/kereta.png"
           alt=""
         />
-        <img
-          className=" my-5 md:hidden w-full object-cover"
-          src="/mobile.png"
-          alt=""
-        />
+        <div className="  ">
+          <img
+            className="w-full h-[600px]  mt-5 md:hidden object-cover "
+            src="/kereta8.png"
+            alt=""
+          />
+        </div>
       </div>
     </section>
   );

@@ -17,7 +17,7 @@ const Footer: React.FunctionComponent<IFooterProps> = (props) => {
   const router = useRouter();
   return (
     <div className=" py-5 border ">
-      <div className="flex flex-col md:flex-row mx-6 md:mx-40 my-6 md:my-20">
+      <div className="flex flex-col md:flex-row mx-6 md:mx-40 my-0 md:my-20">
         <div className="flex-[2]  ">
           <img
             className="w=[132px] h-[48px]  mx-auto"

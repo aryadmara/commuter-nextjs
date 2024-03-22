@@ -54,8 +54,8 @@ const Iklan: React.FunctionComponent<IIklanProps> = (props) => {
         </div>
       </div>
       <div className=" py-5">
-        <div className="mx-2 md:mx-20 ">
-          <div className="  mx-4 md:mx-auto mb-10 flex md:grid flex-row md:grid-cols-4 gap-4 gap-y-10 overflow-x-auto">
+        <div className="mx-2 md:mx-10 ">
+          <div className="  mx-4 md:mx-auto mb-10 flex md:grid flex-row md:grid-cols-4 gap-2 md:gap-x-5 overflow-x-auto md:overflow-hidden">
             <Destination
               imageUrl="https://redigest.web.id/wp-content/uploads/2024/01/WhatsApp-Image-2021-02-26-at-10.31.43-AM-800x445.jpeg"
               tujuan="Train"
