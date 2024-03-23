@@ -48,7 +48,7 @@ const About: React.FunctionComponent<IAboutProps> = (props) => {
             <select
               id="fromStation"
               name="fromStation"
-              className="rounded-full py-3 pr-[30vw] pl-4 mt-2 text-sm"
+              className="rounded-full py-3 w-[300px] md:w-[400px] pl-4 mt-2 text-sm"
               value={fromStation}
               onChange={(e) => setFromStation(e.target.value)}
             >
@@ -71,7 +71,7 @@ const About: React.FunctionComponent<IAboutProps> = (props) => {
             <select
               id="toStation"
               name="toStation"
-              className="rounded-full py-3 pr-[30vw] pl-4 mt-4 mb-4 text-sm"
+              className="rounded-full py-3 w-[300px] md:w-[400px] pl-4 mt-4 mb-4 text-sm"
               value={toStation}
               onChange={(e) => setToStation(e.target.value)}
             >

@@ -71,7 +71,9 @@ const Footer: React.FunctionComponent<IFooterProps> = (props) => {
           >
             Services
           </h1>
-          <h1 className=" cursor-pointer">Teams</h1>
+          <h1 className=" cursor-pointer" onClick={() => router.push("/teams")}>
+            Teams
+          </h1>
         </div>
       </div>
       <h1 className=" mx-4 md:mx-40 text-center md:text-left  ">

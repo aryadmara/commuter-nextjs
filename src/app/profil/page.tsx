@@ -1,9 +1,12 @@
+"use client";
 import CardBudaya from "@/components/CardBudaya";
 import * as React from "react";
+import { useRouter } from "next/navigation";
 
 interface IProfilProps {}
 
 const Profil: React.FunctionComponent<IProfilProps> = (props) => {
+  const router = useRouter();
   return (
     <section className=" bg-white">
       <div className="flex flex-col relative bg-gradient-to-r from-[#ed6b1e]">
@@ -27,7 +30,7 @@ const Profil: React.FunctionComponent<IProfilProps> = (props) => {
         </h2>
         <h2
           className=" bg-[#e7e9eb] py-4 px-4 md:px-10 text-[#2b3577] hover:text-white hover:bg-[#2b3577] font-bold rounded-xl  cursor-pointer"
-          //   onClick={() => router.push("/iklan")}
+          onClick={() => router.push("/teams")}
         >
           Teams
         </h2>
@@ -96,57 +99,59 @@ const Profil: React.FunctionComponent<IProfilProps> = (props) => {
           </div>
         </div>
 
-        <div className=" w-full mx-4 md:mx-auto grid grid-cols-6 md:grid-cols-1 md:gap-5  py-5 overflow-x-auto">
-          <div className="flex flex-row md:flex-col mx-auto gap-10 md:gap-6 text-[#292570] ">
-            <CardBudaya
-              gambar="https://commuterline.id/app/sam/assets/culture_value/0ca157c75268e5e391bd9156bcd45cfc.svg"
-              huruf="AMANAH"
-              subjudul="Memegang Teguh Amanah yang Diberikan"
-              list1="Memenuhi Janji dan Komitmen."
-              list2="Bertanggung Jawab atas Tugas, Keputusan dan Tindakan yang dilakukan."
-              list3="Berpegang Teguh kepada Nilai Moral dan Etika."
-            />
-            <CardBudaya
-              gambar="https://commuterline.id/app/sam/assets/culture_value/10ff551e099a87367164f2322f2bd888.svg"
-              huruf="KOMPETEN"
-              subjudul="Berdedikasi dan Mengutamakan Kepentingan Bangsa dan Negara"
-              list1="Menjaga Nama Baik Sesama Pekerja, Direksi, Dewan Komisaris, Pemegang Saham dan Negara."
-              list2="Rela Berkorban untuk Mencapai Tujuan yang Lebih Besar."
-              list3="Patuh Kepada Pimpinan Sepanjang Tidak Bertentangan dengan Hukum dan Etika."
-            />
-            <CardBudaya
-              gambar="https://commuterline.id/app/sam/assets/culture_value/94d66c9a2653de25d5e0d233ace2ede8.svg"
-              huruf="HARMONIS"
-              subjudul="Saling Peduli dan Menghargai Perbedaan"
-              list1="Menghargai Setiap Orang Apapun Latar Belakangnya."
-              list2="Suka Menolong Orang Lain."
-              list3="Membangun Lingkungan Kerja yang Kondusif."
-            />
-            <CardBudaya
-              gambar="https://commuterline.id/app/sam/assets/culture_value/44718fc8700b103ceeb9ebf34ff26f89.svg"
-              huruf="LOYAL"
-              subjudul="Berdedikasi dan Mengutamakan Kepentingan Bangsa dan Negara"
-              list1="Menjaga Nama Baik Sesama Pekerja, Direksi, Dewan Komisaris, Pemegang Saham dan Negara."
-              list2="Rela Berkorban untuk Mencapai Tujuan yang Lebih Besar."
-              list3="Patuh Kepada Pimpinan Sepanjang Tidak Bertentangan dengan Hukum dan Etika."
-            />
-            <CardBudaya
-              gambar="https://commuterline.id/app/sam/assets/culture_value/9d5c514c359db9a68651b08699ac20d3.svg"
-              huruf="
+        <div className=" mx-4">
+          <div className=" w-full mx-0 md:mx-auto grid grid-cols-6 md:grid-cols-1 md:gap-5  py-5 overflow-x-auto">
+            <div className="flex flex-row md:flex-col mx-auto gap-10 md:gap-6 text-[#292570] overflow-x-auto ">
+              <CardBudaya
+                gambar="https://commuterline.id/app/sam/assets/culture_value/0ca157c75268e5e391bd9156bcd45cfc.svg"
+                huruf="AMANAH"
+                subjudul="Memegang Teguh Amanah yang Diberikan"
+                list1="Memenuhi Janji dan Komitmen."
+                list2="Bertanggung Jawab atas Tugas, Keputusan dan Tindakan yang dilakukan."
+                list3="Berpegang Teguh kepada Nilai Moral dan Etika."
+              />
+              <CardBudaya
+                gambar="https://commuterline.id/app/sam/assets/culture_value/10ff551e099a87367164f2322f2bd888.svg"
+                huruf="KOMPETEN"
+                subjudul="Berdedikasi dan Mengutamakan Kepentingan Bangsa dan Negara"
+                list1="Menjaga Nama Baik Sesama Pekerja, Direksi, Dewan Komisaris, Pemegang Saham dan Negara."
+                list2="Rela Berkorban untuk Mencapai Tujuan yang Lebih Besar."
+                list3="Patuh Kepada Pimpinan Sepanjang Tidak Bertentangan dengan Hukum dan Etika."
+              />
+              <CardBudaya
+                gambar="https://commuterline.id/app/sam/assets/culture_value/94d66c9a2653de25d5e0d233ace2ede8.svg"
+                huruf="HARMONIS"
+                subjudul="Saling Peduli dan Menghargai Perbedaan"
+                list1="Menghargai Setiap Orang Apapun Latar Belakangnya."
+                list2="Suka Menolong Orang Lain."
+                list3="Membangun Lingkungan Kerja yang Kondusif."
+              />
+              <CardBudaya
+                gambar="https://commuterline.id/app/sam/assets/culture_value/44718fc8700b103ceeb9ebf34ff26f89.svg"
+                huruf="LOYAL"
+                subjudul="Berdedikasi dan Mengutamakan Kepentingan Bangsa dan Negara"
+                list1="Menjaga Nama Baik Sesama Pekerja, Direksi, Dewan Komisaris, Pemegang Saham dan Negara."
+                list2="Rela Berkorban untuk Mencapai Tujuan yang Lebih Besar."
+                list3="Patuh Kepada Pimpinan Sepanjang Tidak Bertentangan dengan Hukum dan Etika."
+              />
+              <CardBudaya
+                gambar="https://commuterline.id/app/sam/assets/culture_value/9d5c514c359db9a68651b08699ac20d3.svg"
+                huruf="
             ADAPTIF"
-              subjudul="Terus Berinovasi dan Antusias Dalam Menggerakan ataupun Menghadapi Perubahan"
-              list1="Cepat Menyesuaikan Diri Untuk Menjadi Lebih Baik."
-              list2="Terus Menerus Melakukan Perbaikan Mengikuti Perkembangan Teknologi."
-              list3="Bertindak Proaktif."
-            />
-            <CardBudaya
-              gambar="https://commuterline.id/app/sam/assets/culture_value/cde5d4cf360953fb0b5be2ff35c57fcb.svg"
-              huruf="KOLABORATIF"
-              subjudul="Membangun Kerjasama yang Sinergis"
-              list1="Memberi Kesempatan Kepada Berbagai Pihak Untuk Berkontribusi."
-              list2="Terbuka Dalam Bekerjasama Untuk Menghasilkan Nilai Tambah."
-              list3="Menggerakan Pemanfaatan Berbagai Sumber Daya untuk Tujuan Bersama"
-            />
+                subjudul="Terus Berinovasi dan Antusias Dalam Menggerakan ataupun Menghadapi Perubahan"
+                list1="Cepat Menyesuaikan Diri Untuk Menjadi Lebih Baik."
+                list2="Terus Menerus Melakukan Perbaikan Mengikuti Perkembangan Teknologi."
+                list3="Bertindak Proaktif."
+              />
+              <CardBudaya
+                gambar="https://commuterline.id/app/sam/assets/culture_value/cde5d4cf360953fb0b5be2ff35c57fcb.svg"
+                huruf="KOLABORATIF"
+                subjudul="Membangun Kerjasama yang Sinergis"
+                list1="Memberi Kesempatan Kepada Berbagai Pihak Untuk Berkontribusi."
+                list2="Terbuka Dalam Bekerjasama Untuk Menghasilkan Nilai Tambah."
+                list3="Menggerakan Pemanfaatan Berbagai Sumber Daya untuk Tujuan Bersama"
+              />
+            </div>
           </div>
         </div>
         <div className=" mx-6 md:mx-40 mt-32 ">

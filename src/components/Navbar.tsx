@@ -43,10 +43,18 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
             >
               HOME
             </a>
-            <a className=" m-5 hover:text-[#c9c9c9]" href="#">
+            <a
+              className=" m-5 hover:text-[#c9c9c9]"
+              href="#"
+              onClick={() => router.push("/profil")}
+            >
               ABOUT US
             </a>
-            <a className=" m-5 hover:text-[#c9c9c9] group relative" href="#">
+            <a
+              className=" m-5 hover:text-[#c9c9c9] group relative"
+              href="#"
+              onClick={() => router.push("/layanan")}
+            >
               SERVICES
               <ul className="absolute hidden group-hover:block bg-white text-[#ed6b1e] shadow-md rounded-md py-1 mt-2 w-96 border z-50">
                 <li
@@ -63,7 +71,11 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
                 </li>
               </ul>
             </a>
-            <a className=" m-5 hover:text-[#c9c9c9]" href="#">
+            <a
+              className=" m-5 hover:text-[#c9c9c9]"
+              href="#"
+              onClick={() => router.push("/teams")}
+            >
               TEAMS
             </a>
           </nav>

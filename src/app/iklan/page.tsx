@@ -33,7 +33,7 @@ const Iklan: React.FunctionComponent<IIklanProps> = (props) => {
           className=" bg-[#e7e9eb] py-4 px-4 md:px-10 text-[#2b3577] hover:text-white hover:bg-[#2b3577] font-bold rounded-xl  cursor-pointer"
           onClick={() => router.push("/layanan")}
         >
-          Info Tarif Perjalanan
+          Info Perjalanan
         </h2>
         <h2 className="  bg-[#2b3577] py-4  px-4 md:px-10 text-white font-bold rounded-xl cursor-pointer">
           Space Iklan
