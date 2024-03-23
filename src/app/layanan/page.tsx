@@ -183,7 +183,7 @@ const About: React.FunctionComponent<IAboutProps> = (props) => {
             <h1 className=" text-3xl md:text-3xl pt-4 text-[#292570] ">
               KEBIJAKAN PRIVASI C-ACCESS
             </h1>
-            <h3 className="  text-[#ed6b1e] mt-4 ">
+            <h3 className="  text-black mt-4 ">
               Mulai dari 13 September 2022, kebijakan Privasi ini menjelaskan
               bagaimana KCI (PT Kereta Commuter Indonesia dan
               afiliasi-afiliasinya, atau “Kami”) melindungi terhadap perolehan,

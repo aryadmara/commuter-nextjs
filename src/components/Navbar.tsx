@@ -19,7 +19,7 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
         <header className=" px-6 md:px-40 py-4  w-full  m-auto left-0 right-0  flex items-center justify-between  text-[#929499] bg-white ">
           <div className=" bottom-40  md:bottom-4 right-4 fixed bg-[#ed6b1e] rounded-md p-4 z-50 cursor-pointer">
             <span className="  rounded-full">
-              <a href="#">
+              <a>
                 <IoIosArrowDropupCircle
                   className="  w-8 h-8 text-white"
                   onClick={scrollToTop}

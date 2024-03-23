@@ -118,7 +118,7 @@ export default function Home() {
             <img
               className="h-[50vh] object-cover md:w-auto md:h-auto"
               src="https://commuterline.id/app/sam/assets/home/9bd9b1f5f5a96532c8d7b88267259d25.png"
-              alt=""
+              alt="c-acces"
             />
             <div className="flex justify-end mb-4 ">
               <img
@@ -128,7 +128,7 @@ export default function Home() {
                 }
                 className=" w-32 md:w-auto object-contain justify-center items-center text-center cursor-pointer"
                 src="https://commuterline.id/app/sam/assets/images/ac70ce07ac0616502090352789b6f44b.png"
-                alt=""
+                alt="google-play"
               />
             </div>
           </div>
@@ -151,14 +151,17 @@ export default function Home() {
           >
             <Card
               gambar="https://commuterline.id/app/sam/assets/home/afe01f4b0ddf5b41902c8a1cf08f38e3.svg"
+              alt="lacak kereta kapan aja"
               untung="Lacak kereta kapan aja"
             />
             <Card
               gambar="https://commuterline.id/app/sam/assets/home/43fdab8150da38d7cef5dd3f3cf2ddec.svg"
+              alt="mudah tentukan jadwal"
               untung="Mudah tentukan jadwal"
             />
             <Card
               gambar="https://commuterline.id/app/sam/assets/home/a53a032aab2c51da9d7b6e6c984ada72.svg"
+              alt="info perjalanan kereta api lengkap"
               untung="Fitur perjalanan lengkap"
             />
           </div>
