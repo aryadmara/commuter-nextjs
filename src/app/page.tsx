@@ -13,10 +13,14 @@ export default function Home() {
   const [blogData, setBlogData] = useState<any>(null);
   const [blogData1, setBlogData1] = useState<any>(null);
   const [blogData2, setBlogData2] = useState<any>(null);
+  const [blogData3, setBlogData3] = useState<any>(null);
+  const [blogData4, setBlogData4] = useState<any>(null);
   useEffect(() => {
     getOtherArticle();
     getOtherArticle1();
     getOtherArticle2();
+    getOtherArticle3();
+    getOtherArticle4();
   }, []);
   const getOtherArticle = async () => {
     try {
@@ -42,6 +46,24 @@ export default function Home() {
       const response = await getBlogPosts();
       console.log("mengambil data dari:", response);
       setBlogData2(response[2]);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  const getOtherArticle3 = async () => {
+    try {
+      const response = await getBlogPosts();
+      console.log("mengambil data dari:", response);
+      setBlogData3(response[3]);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  const getOtherArticle4 = async () => {
+    try {
+      const response = await getBlogPosts();
+      console.log("mengambil data dari:", response);
+      setBlogData4(response[4]);
     } catch (error) {
       console.log(error);
     }
@@ -199,9 +221,9 @@ export default function Home() {
         <div className="  py-5 flex flex-col text-center items-center justify-center  mt-3 mx-4 md:mx-40">
           <h1 className="text-3xl font-semibold">Commuter Line News</h1>
         </div>
-        <div className="  py-5 overflow-x-auto">
+        <div className="  py-5  ">
           <div className="mx-2 md:mx-20  ">
-            <div className="  mx-4 md:mx-auto mb-10 flex   gap-4 gap-y-10  ">
+            <div className="  mx-4 md:mx-auto mb-10 flex   gap-4 gap-x-8 overflow-x-auto ">
               {/* NEWS AWAL */}
               <News
                 url={`${blogData?.image.fields.file.url}`}
@@ -220,6 +242,18 @@ export default function Home() {
                 judul={`${blogData2?.title}`}
                 author={`${blogData2?.author}`}
                 dibuat={`${blogData2?.createdAt}`}
+              />
+              <News
+                url={`${blogData3?.image.fields.file.url}`}
+                judul={`${blogData3?.title}`}
+                author={`${blogData3?.author}`}
+                dibuat={`${blogData3?.createdAt}`}
+              />
+              <News
+                url={`${blogData4?.image.fields.file.url}`}
+                judul={`${blogData4?.title}`}
+                author={`${blogData4?.author}`}
+                dibuat={`${blogData4?.createdAt}`}
               />
             </div>
           </div>

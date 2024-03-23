@@ -25,10 +25,33 @@ const Footer: React.FunctionComponent<IFooterProps> = (props) => {
             alt=""
           />
           <section className="flex mt-10 cursor-pointer space-x-3 justify-center">
-            <TiSocialFacebook className=" w-8 h-8 rounded-full text-[#292570] " />
-            <TiSocialTwitter className=" w-8 h-8  rounded-full text-[#292570] " />
-            <TiSocialYoutube className=" w-8 h-8  rounded-full text-[#292570] " />
-            <AiFillInstagram className=" w-8 h-8  rounded-full text-[#292570] " />
+            <TiSocialFacebook
+              className=" w-8 h-8 rounded-full text-[#292570] "
+              onClick={() =>
+                (window.location.href =
+                  "https://www.facebook.com/CommuterLine/?locale=id_ID")
+              }
+            />
+            <TiSocialTwitter
+              className=" w-8 h-8  rounded-full text-[#292570] "
+              onClick={() =>
+                (window.location.href =
+                  "https://twitter.com/CommuterLine?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor")
+              }
+            />
+            <TiSocialYoutube
+              className=" w-8 h-8  rounded-full text-[#292570] "
+              onClick={() =>
+                (window.location.href = "https://www.youtube.com/@kaicommuter")
+              }
+            />
+            <AiFillInstagram
+              className=" w-8 h-8  rounded-full text-[#292570] "
+              onClick={() =>
+                (window.location.href =
+                  "https://www.instagram.com/commuterline/")
+              }
+            />
           </section>
         </div>
         <div className="flex-[2] space-y-3 font-semibold mt-6 md:mt-0 text-[#292570] ">
