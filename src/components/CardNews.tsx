@@ -1,4 +1,6 @@
+"use client";
 import * as React from "react";
+import { useRouter } from "next/navigation";
 
 interface INewsProps {
   judul: string;
@@ -8,8 +10,12 @@ interface INewsProps {
 }
 
 const News: React.FunctionComponent<INewsProps> = (props) => {
+  const router = useRouter();
   return (
-    <div className=" overflow-hidden min-w-[300px] min-h-[256px] md:max-w-[410px] md:max-h-[400px] flex flex-col  bg-gradient-to-r from-[#cacfd7] hover:from-[#cacfd7]/30 bg-red   rounded-md text-[#292570] text-left shadow-xl cursor-pointer relative  ">
+    <div
+      className=" overflow-hidden min-w-[300px] min-h-[256px] md:max-w-[410px] md:max-h-[400px] flex flex-col  bg-gradient-to-r from-[#cacfd7] hover:from-[#cacfd7]/30 bg-red   rounded-md text-[#292570] text-left shadow-xl cursor-pointer relative  "
+      onClick={() => router.push("/berita")}
+    >
       <img src={props.url} alt="" />
       <div className=" flex-1 p-4">
         <h1 className=" font-semibold">{props.judul}</h1>
